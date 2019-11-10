@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Ride With Me </title>
+
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+
+
+        <div>
+            <form>
+                #<span id="form_num">0</span> 
+                Start: <input id="form_start" type="text">
+                End: <input id="form_end" type="text">
+                <br><br>
+
+                <button id="display_form" type="button" onclick="displayForm()"> Add a Friend </button>                
+                <button id="submit" type="button"> Submit </button>
+            </form>
+            <div id="directions"></div>
+        </div>
+
+
+        <div id="map"></div>
+        <div id="right-panel"></div>
+
+
+        <script>
+            var MYARRAY = 0;
+        </script>
+        <script src="map.js"></script>
+        <script src="display_form.js"></script>
+        <script 
+            async 
+            defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWmhqUe8o_f-UlIEUG8RrYYg97ipzOzNE&callback=initMap">
+        </script>
+
+    </body>
+</html>
